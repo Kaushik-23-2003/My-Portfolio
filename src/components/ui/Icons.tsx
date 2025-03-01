@@ -1,14 +1,14 @@
-// ui/Icons.tsx
-const Github = () => {
-  return (
-    <img
-      src="https://img.icons8.com/?size=100&id=62856&format=png&color=ffffff"
-      alt="GitHub Icon"
-      width={32}
-      height={32}
-    />
-  );
-};
+import Image from "next/image";
+
+const Github = () => (
+  <Image
+    src="https://img.icons8.com/?size=100&id=62856&format=png&color=ffffff"
+    alt="GitHub Icon"
+    width={32}
+    height={32}
+    unoptimized
+  />
+);
 
 const ExternalLink = () => {
   return (
@@ -79,32 +79,35 @@ const MinusIcon: React.FC = () => (
   </svg>
 );
 
-// Updated Icon Components using <img> tags and icons8 PNG URLs:
+
 
 const Instagram = () => (
-  <img
+  <Image
     src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
     alt="Instagram Icon"
     width={32}
     height={32}
+    unoptimized
   />
 );
 
 const LinkedIn = () => (
-  <img
+  <Image
     src="https://img.icons8.com/?size=100&id=qNUNvR9aEWql&format=png&color=000000"
     alt="LinkedIn Icon"
     width={32}
     height={32}
+    unoptimized
   />
 );
 
-const Twitter = () => ( // Using Twitter icon for "X"
-  <img
+const Twitter = () => ( 
+  <Image
     src="https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000"
     alt="X Icon"
     width={32}
     height={32}
+    unoptimized
   />
 );
 
