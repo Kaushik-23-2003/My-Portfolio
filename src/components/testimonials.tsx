@@ -4,6 +4,7 @@ import { Testimonial as ITestimonial } from "../utils/interface";
 import { InfiniteScroll } from "./ui/InfiniteScroll";
 import { SlideIn, Transition } from "./ui/Transitions";
 import { SectionHeading } from "./ui/Typography";
+import Image from "next/image";
 
 const Testimonials = ({ testimonials }: { testimonials: ITestimonial[] }) => {
   return (
@@ -62,13 +63,13 @@ const Testimonial = ({
               </p>
             </div>
             <div className="flex gap-3 pt-6">
-              <img
-                src={val.image.url}
-                width={50}
-                height={50}
-                alt={val.name}
-                className="object-scale-down size-10 bg-black rounded-full"
-              />
+              <Image
+                  src={val.image.url}
+                  width={50}
+                  height={50}
+                  alt={val.name}
+                  className="object-scale-down size-10 bg-black rounded-full"
+                />
               <div>
                 <h4 className="md:font-semibold font-medium">{val.name}</h4>
                 <h5 className="md:text-sm text-xs opacity-60">
