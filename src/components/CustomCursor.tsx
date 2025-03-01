@@ -1,8 +1,7 @@
 "use client";
 
-import { motion, useMotionValue, useSpring, Variants } from "motion/react";
+import { motion, useMotionValue, useSpring, Variants, useMotionValueEvent } from "framer-motion";
 import { useEffect } from "react";
-
 import { useVariants } from "../utils/hooks";
 
 function CustomCursor() {
@@ -18,38 +17,21 @@ function CustomCursor() {
   useEffect(() => {
     const moveCursor = (e: MouseEvent) => {
       requestAnimationFrame(() => {
-        // Update position only on animation frame
-        cursorX.set(e.clientX - (variant === "PROJECT" ? 32 : 8)); // Adjust offset based on variant
+        cursorX.set(e.clientX - (variant === "PROJECT" ? 32 : 8));
         cursorY.set(e.clientY - (variant === "PROJECT" ? 32 : 8));
       });
     };
 
     window.addEventListener("mousemove", moveCursor);
+    return () => window.removeEventListener("mousemove", moveCursor);
+  }, [variant, cursorX, cursorY]); // **Fixed Dependency Warning**
 
-    return () => {
-      window.removeEventListener("mousemove", moveCursor);
-    };
-  }, [variant]);
-
+  // **Use Variants Object for Animation States**
   const variants: Variants = {
-    DEFAULT: {
-      width: 16,
-      height: 16,
-      border: "1px solid white",
-    },
-    PROJECT: {
-      height: 100,
-      width: 100,
-    },
-    BUTTON: {
-      opacity: 0,
-    },
-    TEXT: {
-      height: 100,
-      width: 100,
-      backgroundColor: "transparent",
-      border: "1px solid white",
-    },
+    DEFAULT: { width: 16, height: 16, border: "1px solid white" },
+    PROJECT: { height: 100, width: 100 },
+    BUTTON: { opacity: 0 },
+    TEXT: { height: 100, width: 100, backgroundColor: "transparent", border: "1px solid white" },
   };
 
   return (
