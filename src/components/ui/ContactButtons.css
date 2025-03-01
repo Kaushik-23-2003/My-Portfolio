@@ -1,0 +1,81 @@
+/* src/components/ui/ContactButtons.css */
+
+.socialMediaButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 12px;
+  border-radius: 15px;
+  color: white;
+  background-color: gray;
+  border: none;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  opacity: 1;
+  min-width: 155px;
+  max-height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 0.025em;
+  transform: translateY(0); /* Set initial translateY to 0 */
+  backface-visibility: hidden;
+  perspective: 1000px;
+  will-change: transform, opacity, box-shadow, background-color;
+  transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out, background-color 0.15s ease-in-out; /* Shortened transition duration */
+}
+
+.socialMediaButton:hover {
+  opacity: 0.9;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  background-color: rgba(204, 204, 204, 0.1);
+}
+
+.socialMediaButton:active {
+  transform: scale(0.98) translateY(0); /* Remove translateY on active for simplicity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.socialMediaIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-out; /* Slightly faster icon rotation */
+  will-change: transform;
+}
+
+
+.socialMediaButton:hover .socialMediaIcon {
+  transform: rotate(360deg); /* Full 360 rotation */
+}
+
+.socialMediaButton-text {
+  white-space: nowrap;
+  font-weight: bold;
+  transition: transform 0.15s ease-in-out; /* Shorter text scaling transition */
+}
+
+.socialMediaButton:hover .socialMediaButton-text {
+  transform: scale(1.05);
+}
+
+
+/* Brand Colors */
+.socialMediaButton.instagram-gradient {
+  background-image: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.socialMediaButton.linkedin {
+  background-color: #0278d4;
+}
+
+.socialMediaButton.x {
+  background-color: #212121;
+  color: #fdfdfd;
+}
+
+.socialMediaButton.github {
+  background-color: #555;
+}
