@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { OpacityTransition, Transition } from "./ui/Transitions";
 
@@ -13,17 +13,18 @@ const Loader = ({ setHideLoader }: PageLoadProps) => {
 
   useEffect(() => {
     const count = setInterval(() => {
-      if (counter < 100) {
-        setCounter(counter + 2);
-      } else {
-        clearInterval(count);
-      }
+      setCounter((prevCounter) => {
+        if (prevCounter < 100) {
+          return prevCounter + 2;
+        } else {
+          clearInterval(count);
+          return prevCounter;
+        }
+      });
     }, 25);
 
-    return () => {
-      clearInterval(count);
-    };
-  }, [counter]);
+    return () => clearInterval(count);
+  }, []);
 
   return (
     <motion.div
@@ -39,9 +40,12 @@ const Loader = ({ setHideLoader }: PageLoadProps) => {
         </Transition>
         <div className="flex flex-col max-md:justify-between max-md:h-full">
           <Transition transition={{ delay: 0.7 }}>
-            <div className="text-3xl md:text-5xl w-full md:w-2/5 whitespace-pre-wrap font-semibold text-white tracking-tight leading-relaxed" style={{ wordBreak: 'break-word' }}> {/* Added inline style */}
+            <div
+              className="text-3xl md:text-5xl w-full md:w-2/5 whitespace-pre-wrap font-semibold text-white tracking-tight leading-relaxed"
+              style={{ wordBreak: "break-word" }}
+            >
               <OpacityTransition>
-               I develop full-stack web app and create AI-powered solution  
+                I develop full-stack web apps and create AI-powered solutions.
               </OpacityTransition>
             </div>
           </Transition>
