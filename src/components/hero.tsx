@@ -1,15 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "motion/react"; // Keep motion for animations
+import Image from "next/image"; // ✅ Import Next.js Image
+import { motion } from "motion/react"; 
 
 import { About } from "../utils/interface";
-import { cn } from "../utils/cn"; // Assuming you are using cn for class merging
+import { cn } from "../utils/cn"; 
 import { SectionHeading, TextReveal } from "./ui/Typography";
 import { SlideIn, Transition } from "./ui/Transitions";
-import { ArrowUpRight } from "./ui/Icons";
+import { ArrowUpRight, DownloadIcon } from "./ui/Icons";
 import LoaderWrapper from "./LoaderWrapper";
-import { DownloadIcon } from "./ui/Icons";
 
 interface HeroProps {
   about: About;
@@ -25,15 +25,19 @@ const Hero = ({ about }: HeroProps) => {
         <div className="relative h-full w-full">
           <div className="flex items-center justify-center flex-col h-full pb-10">
             <Transition>
-              <motion.img
-                src={about.avatar.url}
-                alt={about.name}
-                className="rounded-full size-36 object-cover"
-              />
+              <motion.div>
+                <Image
+                  src={about.avatar.url}
+                  alt={about.name}
+                  width={144} // ✅ Set proper width
+                  height={144} // ✅ Set proper height
+                  className="rounded-full object-cover"
+                />
+              </motion.div>
             </Transition>
             <div className="py-6 flex items-center flex-col">
               <h2 className="md:text-7xl text-2xl font-bold overflow-hidden text-center w-full">
-                <SlideIn>Hello! I'm {about.name}</SlideIn>
+                <SlideIn>Hello! I&apos;m {about.name}</SlideIn> {/* ✅ Fixed Apostrophe */}
               </h2>
               <h1 className="md:text-6xl text-xl overflow-hidden text-center w-full">
                 <SlideIn>{about.title}</SlideIn>
@@ -48,17 +52,16 @@ const Hero = ({ about }: HeroProps) => {
             </Transition>
 
             <Transition viewport={{ once: true }}>
-   
-                <motion.a
-                  href="/resume/resume.pdf" // Path to your resume file in public directory
-                  download="Hariharan_Kaushik_Resume.pdf" // Optional: Custom filename for download
-                  className="px-5 py-3 mt-4 rounded-full border border-white/50 flex items-center gap-2 group" 
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <span className="text-base tracking-wider mr-2">Fetch My Resume ( )</span>
-                  <DownloadIcon /> 
-                </motion.a>
+              <motion.a
+                href="/resume/resume.pdf"
+                download="Hariharan_Kaushik_Resume.pdf"
+                className="px-5 py-3 mt-4 rounded-full border border-white/50 flex items-center gap-2 group" 
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span className="text-base tracking-wider mr-2">Fetch My Resume ( )</span>
+                <DownloadIcon /> 
+              </motion.a>
             </Transition>
           </div>
         </div>

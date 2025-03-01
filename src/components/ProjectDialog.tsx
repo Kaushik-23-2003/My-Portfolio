@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"; // Import Image from next/image
 import { Dispatch, SetStateAction, useEffect } from "react";
 import { motion } from "motion/react";
 
@@ -18,13 +19,13 @@ const ProjectDialog = ({
 }: DialogProps) => {
   useEffect(() => {
     const disableScroll = () => {
-      document.body.style.overflow = 'hidden';
-      document.body.style.paddingRight = '15px';
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = "15px";
     };
 
     const enableScroll = () => {
-      document.body.style.overflow = '';
-      document.body.style.paddingRight = '';
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
     };
 
     disableScroll();
@@ -36,7 +37,10 @@ const ProjectDialog = ({
 
   const getParagraphs = (description: string) => {
     if (!description) return [];
-    return description.split('$').map(paragraph => paragraph.trim()).filter(paragraph => paragraph.length > 0);
+    return description
+      .split("$")
+      .map((paragraph) => paragraph.trim())
+      .filter((paragraph) => paragraph.length > 0);
   };
 
   const descriptionParagraphs = getParagraphs(selectedProject.description);
@@ -49,7 +53,7 @@ const ProjectDialog = ({
     >
       <motion.div
         className="bg-gray-900 text-white w-full md:w-11/12 lg:w-[70%] xl:w-1/2 rounded-xl max-h-[90vh] shadow-2xl flex flex-col"
-        style={{ maxHeight: '95vh' }}
+        style={{ maxHeight: "95vh" }}
       >
         <div className="relative">
           <button
@@ -58,27 +62,38 @@ const ProjectDialog = ({
           >
             <XMark />
           </button>
-          <div className="h-40 md:h-48 overflow-hidden mb-5">
-            <img
+          <div className="h-40 md:h-48 overflow-hidden mb-5 relative">
+            <Image
               src={selectedProject.image.url}
               alt={selectedProject.title}
-              className="w-full h-full object-cover object-center"
+              layout="fill" // Ensures responsive sizing
+              objectFit="cover"
+              className="rounded-lg"
+              priority // Optimizes LCP performance
             />
           </div>
         </div>
         <div className="p-4 flex flex-col flex-grow overflow-y-auto ">
           <div className="mb-6">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight">{selectedProject.title}</h3>
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight">
+                {selectedProject.title}
+              </h3>
               <div className="flex items-center gap-4">
-                <Link href={selectedProject.githuburl} target="_blank" rel="noopener noreferrer">
-                  {/* Updated Github Link with hover class */}
+                <Link
+                  href={selectedProject.githuburl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <motion.span className="hover:text-indigo-500 transition-colors">
                     <Github />
                   </motion.span>
                 </Link>
-                <Link href={selectedProject.liveurl} target="_blank" rel="noopener noreferrer">
-                   {/* Updated ExternalLink Link with hover class */}
+                <Link
+                  href={selectedProject.liveurl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <motion.span className="hover:text-indigo-500 transition-colors">
                     <ExternalLink />
                   </motion.span>
@@ -89,7 +104,7 @@ const ProjectDialog = ({
               {selectedProject.techStack.map((tech, index) => (
                 <motion.span
                   key={index}
-                  className="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium border border-gray-700 hover:bg-gray-700 transition-colors" // Added hover:bg-gray-700 and transition-colors
+                  className="px-4 py-2 bg-gray-800 rounded-full text-sm font-medium border border-gray-700 hover:bg-gray-700 transition-colors"
                 >
                   {tech}
                 </motion.span>
