@@ -36,7 +36,7 @@ const Loader = ({ setHideLoader }: PageLoadProps) => {
     >
       <div className="p-4 md:p-10 flex flex-col md:justify-between max-md:gap-8 w-full h-full">
         <Transition transition={{ delay: 0.2 }}>
-          <span className="font-semibold text-white/40">Kaushik's Portfolio</span>
+          <span className="font-semibold text-white/40">Kaushik&apos;s Portfolio</span>
         </Transition>
         <div className="flex flex-col max-md:justify-between max-md:h-full">
           <Transition transition={{ delay: 0.7 }}>
