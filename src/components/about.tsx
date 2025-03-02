@@ -56,8 +56,8 @@ const About = ({ about, timeline }: AboutProps) => {
           <Transition>
             <img
               src={about.avatar.url}
-              width={400}
-              height={400}
+              width={600}
+              height={600}
               alt={about.name}
               className="rounded-xl max-md:aspect-square object-cover"
             />
