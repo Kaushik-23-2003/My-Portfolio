@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image"; // Import Image from next/image
 import { Dispatch, SetStateAction, useEffect } from "react";
 import { motion } from "motion/react";
 
@@ -63,13 +62,12 @@ const ProjectDialog = ({
             <XMark />
           </button>
           <div className="h-40 md:h-48 overflow-hidden mb-5 relative">
-            <Image
+            <img
               src={selectedProject.image.url}
+              width={300}
+              height={300}
               alt={selectedProject.title}
-              layout="fill" // Ensures responsive sizing
-              objectFit="cover"
-              className="rounded-lg"
-              priority // Optimizes LCP performance
+              className="w-full h-full aspect-video md:aspect-[12/6] object-cover object-center"
             />
           </div>
         </div>
