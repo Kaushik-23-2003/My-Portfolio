@@ -48,7 +48,7 @@ const Hero = ({ about }: HeroProps) => {
 
             <Transition viewport={{ once: true }}>
               <motion.a
-                href="/resume/resume.pdf"
+                href="/resume.pdf"
                 download="Hariharan_Kaushik_Resume.pdf"
                 className="px-5 py-3 mt-4 rounded-full border border-white/50 flex items-center gap-2 group" 
                 whileHover={{ scale: 1.05 }}
