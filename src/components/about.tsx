@@ -1,7 +1,6 @@
 "use client";
 
 import { Dispatch, SetStateAction, useState } from "react";
-import Image from "next/image"; // ✅ Import Next.js Image
 import { motion } from "motion/react";
 
 import { About as IAbout, Timeline } from "../utils/interface";
@@ -55,8 +54,8 @@ const About = ({ about, timeline }: AboutProps) => {
       <div className="relative">
         <div className="sticky top-6">
           <Transition>
-            <Image
-              src="https://media-hosting.imagekit.io//3420e7dc4d5b46d7/eNLARGED.jpg?Expires=1834852969&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=yusxgRsqWdXhdTYywb8SgyO~bNmgfwwKAvgQBzi8rLtpCrrlmCsEv2xvEyJ~zqYZanAy39Rtua2wvjBX1ZlCXZapY-hcHNNxHk~eWJkWIYRNpYKf7mSLzyVJ-sYEjyQhWz9rLSi-f~hPmHRyv-ReOBU1GTu-1gMdjf0iiA-haSXM5zwIl3lqQ9i~9jMQv5LJxU-vz~iY8uxFH-HTrQjhll~keK-VTeQB2Vgn5jzBv25ZpYbi~YA1XtMEdeIMXuWEphc2VoKu1efKG5fKJobEwRNYpgNKEZ833-0tTGpggRdPrDcKBUKjXY3pK7gqe7dZgyfjMi0fiwsq6vQFrVsPHw__"
+            <img
+              src={about.avatar.url}
               width={400}
               height={400}
               alt={about.name}
@@ -123,19 +122,15 @@ const TimelineCard = ({
         </div>
         <div className="max-md:text-xs">
           <span className="italic">
-            {timeline.startDate
-              ? formatDate(timeline.startDate).month +
-                ", " +
-                formatDate(timeline.startDate).year
-              : "Present"}
+            {formatDate(timeline.startDate).month +
+              ", " +
+              formatDate(timeline.startDate).year}
           </span>
           {" - "}
           <span className="italic">
-            {timeline.endDate
-              ? formatDate(timeline.endDate).month +
-                ", " +
-                formatDate(timeline.endDate).year
-              : "Present"}
+            {formatDate(timeline.endDate).month +
+              ", " +
+              formatDate(timeline.endDate).year}
           </span>
         </div>
       </div>
