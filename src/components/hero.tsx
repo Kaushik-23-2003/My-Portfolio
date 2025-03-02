@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image"; // ✅ Import Next.js Image
 import { motion } from "motion/react"; 
 
 import { About } from "../utils/interface";
@@ -25,15 +24,11 @@ const Hero = ({ about }: HeroProps) => {
         <div className="relative h-full w-full">
           <div className="flex items-center justify-center flex-col h-full pb-10">
             <Transition>
-              <motion.div>
-                <Image
-                  src={about.avatar.url}
-                  alt={about.name}
-                  width={144} // ✅ Set proper width
-                  height={144} // ✅ Set proper height
-                  className="rounded-full object-cover"
-                />
-              </motion.div>
+              <img
+                src={about.avatar.url}
+                alt={about.name}
+                className="rounded-full size-28 object-cover"
+              />
             </Transition>
             <div className="py-6 flex items-center flex-col">
               <h2 className="md:text-7xl text-2xl font-bold overflow-hidden text-center w-full">
