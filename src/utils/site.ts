@@ -1,5 +1,4 @@
-const site_url =
-  process.env.NEXT_PUBLIC_APP_URL || "https://the-portfolio-lac.vercel.app";
+const site_url = "https://hariharan-kaushik.vercel.app/" || "https://kaushik-hariharan.vercel.app/";
 
 export const siteConfig = {
   name: "Kaushik | Portfolio",
