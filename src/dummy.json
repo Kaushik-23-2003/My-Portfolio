@@ -345,7 +345,7 @@
       "sequence": 14,
       "image": {
         "public_id": "1706285511679-xe7r9t",
-        "url": "https://media-hosting.imagekit.io//71f75d279b4b4b0c/Screenshot%202025-02-26%20211605.png?Expires=1835192791&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zhMdgMC-Q711VYFQpDL-yEKs17Q9L92U71r2fzy21gXbWNQd7wgwMhsfFK8~xaDjasPRS2NI-a~r8VU~d9Rjp5HOAWy76rDLlBtcjQuo4-oFZ-cyPVQxALHFC2k5U44tQzwa5Eb4-cmAANxXT1MkIYrBc59UhhbrNGtYatsXh555rhEglzvdS39iRP4EhN8Lp8pzo5CAsLjsi5AoYlSBRjzjaf7S~bkLKrsGIdL8IefcU~0JtA2NOEOMUPet2iIIQ9HTI78NBbrikuEtymIFvoh94J-pDF3TCigsHFbvx8LL7RZlxnMLCMYeI6lM6bAcXPRb3-6YaHQmvSLGG--1uA__"
+        "url": "/apex-auth-baner.png"
       },
       "description": " Modern, Secure Authentication for Web Applications.$Built for modern web applications, this system provides a complete and robust authentication solution, encompassing JWT, Google Authentication, HTTP-only cookies, bcrypt, and email notifications.$With a decoupled React frontend and Nodejs backend, Apex Auth delivers a secure RESTful API, ensuring performance, maintainability, and ease of integration so you can focus on building your application's core features. ",
       "techStack": ["Reactjs ", " Redux ", " Mern ", " CSS ", " Nodejs ", " MongoDB "],
@@ -360,7 +360,7 @@
       "sequence": 15,
       "image": {
         "public_id": "1706285468702-igx05q",
-        "url": "https://media-hosting.imagekit.io//e854aeb1b2bc4245/Screenshot%202025-02-26%20211925.png?Expires=1835193011&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=jFK58wpMrIE9whsBRSmK0v7eiRiVXa1Nor3CTglOgQFZfYH54Ajc9iQkvuHoquZBsqBOF5VXmN~70SyAmjqdTbbJ1f4tZKBjKbLBim3KP2GQCcUpw3W0oGgTA7qp9O6DDLldSeLlka4buyy9kNwS1nXQdDcMOU8hWnQfudHVXUocNuyPR9jssDwK-RoecnoFlMRu9~xH164SIYp1cLMTwaGnmlNWYDnxWVVe2rjuIQdEg4D-EVu7eH5l1WWWkZ8UItS17OKLQk2stF7mFA7g~4JsIRWukqmhRouFt7nwXPejv7TsVrddQB9zeS1H8sVLSx8MEO9k53VTTgMOSkoO7g__"
+        "url": "/apple-vision-banner.png"
       },
       "description": " Immersive Navigation, Dynamic Video, and Scroll-Triggered Animations. A web-based clone of the Apple Vision Pro product page, designed to showcase a clean and modern interface. The project replicates key elements from the original site, including interactive navigation, dynamic video integration, and scroll-triggered effects. ",
       "techStack": [" HTML" , " CSS " , " JavaScript "],
