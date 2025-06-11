@@ -479,8 +479,7 @@
       "desc": "Engaging user interfaces with React, HTML, CSS, and JavaScript for interactive web experiences.",
       "image": {
         "public_id": "1706290914024-725ytf",
-        "url": "https://media-hosting.imagekit.io//e05603f6ba664d9a/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_1o81e4cmk8vbjna0bf7s.jpg?Expires=1835368031&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=JSVsI-8h20t-Nu6BgC3Hzq1RIy1W3sh~mPF-3hB1RAjPUgsGzGIwde-ZazBZ9uR7CZPgip5ikJzXKfz0ZuwfFOhq9861jnhq~oxmBPqx3EuzHbeDyGpUE1-JYrw1BDsFXMqsGOZiDpP~FGdZsWVOmZPx~hTnzoQonTaaYg9w82sFBwQqCfsqcQzj5~yR9ZR4OSOmuF0I5VNvc6-iY9ntb4VTB~epElOg4WanzKe~o1v7LWUzFAMTw8yAKNo-DiPHmSrzobA2sHOWaUw0BxppXnRMwOMMt762a2z~~ftXxzTEszB9H1-U1ux~sr3V9ZdH4kRA9bT3O3qwQ5ExkVl~PQ__"
-      },
+        "url": "/frontend-dev.png"
       "enabled": true,
       "_id": "service_frontend_web_dev_id_1"
     },
@@ -490,7 +489,7 @@
       "desc": "Robust server-side apps using Node.js, Express.js, MongoDB, and MySQL for efficient APIs and logic.",
       "image": {
         "public_id": "portfolio3/1710357775748-9vwq4q.jpeg",
-        "url": "https://media-hosting.imagekit.io//9caf40cede35480a/Screenshot%202025-02-28%20220108.png?Expires=1835368508&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=hOYTnDCPlKlgDHXNHmPvE85ujIhjAufSQON8WdPzqSbIlEwpJMeBw1JVyHR~98GkxayqujaagnEWGtmtsqZu3ra0jiWKdbfEyn1X~e-npMysmo~TeXQu8iSYPh0zMX~HIwozt5NAcDtYebbNVq5mXaXiTmK27VkJlDyGxUGAnVLiuZIMcafBzb~GDTZDqFDaWWr0~RR8bq~F-1dKU65bLNNCkrHe-zILVjULUy-uGZmj1aJEKo6hr9v6YJafFg2HzjjMmJ68ydBWLQN3ZW39dlzxTcpBjkHcYWjb~Yb5uonxEgoEnd8GG6o1KiM9Mf0r3o69NutLq2GNWiuah~Gyvw__"
+        "url": "/backend-dev.png"
       },
       "enabled": true,
       "_id": "service_backend_web_dev_id_2"
@@ -501,7 +500,7 @@
       "desc": "Complete web solutions integrating frontend & backend for seamless user experiences.",
       "image": {
         "public_id": "portfolio3/1710357752227-6f5trs.jpeg",
-        "url": "https://media-hosting.imagekit.io//a39b0e9e0e2249e0/Screenshot%202025-02-28%20220326.png?Expires=1835368508&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=XckA6jFGYYtd70-F4p9aYGgWOMka4ukPAWj1MIYKYLQ~Kz0H9TQSyCIML1kgdxIJarGGOZxSwRfKXVVVB6bC6AbkZd6tEKyLhHOtRAwj5w2a1osrOlnWBktUxE7Dl6CrXJX~O4jC02ekmRkmyt6e6A9cnV8DpL-ur0JYxrfUH4np9Ve2FCxO68dRti3Rho1hzhqGMwovh9dhBOjzcCGjJ1kQzLIBAss5NyhldTWJ11Sgq5-rz9EhZERRkMMHSKSackYvYy~N4UDVlmUudNWXa2P1-KLZfCKzDjOskS51OCOrYDn8byCxYl-secUWVax~ER-O~9BRN-7fZsFP53ZKxw__"
+        "url": "/full-stack-dev.png"
       },
       "enabled": true,
       "_id": "service_fullstack_web_dev_id_3"
@@ -512,7 +511,7 @@
       "desc": "Developing & evaluating ML models with NLP, Deep Learning for problem-solving & insights.",
       "image": {
         "public_id": "portfolio3/1710357680224-phijt.png",
-        "url": "https://media-hosting.imagekit.io//573f57de5079426c/Screenshot%202025-02-28%20220432.png?Expires=1835368572&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=X02iRhepEKQRBMqUM29vNe1PAdpTmppkwhOnSrW9sBT4FCfCZQRr4hRdFAx5mQUZgBdnrJ3txqYB8OWXqFBEHzX3qrhycrA1~SkmThV-Pg-O5FBcs1xJngGMX2IfgJbf1RMFoOQ2PBXPgqWXXwWqRrfczjW-BcN6I0m207Ld3BwfLqlpFzHZ0rfwsVai3fIJiTQYf4OmDsdC9ji8DVty5tL-ywMPIVXZQx4K0CCIRPhP-1a91zJEwlu~nsrv8TG~2Zq~6Igyr6j9gLOUDhSiDYHkDU2RxCN6WyjQigWo3RqdR8L9n34~3YjZ66RcbVMCxBr6K0mmlKQnnClvYiAu5A__"
+        "url": "/ai-dev.png"
       },
       "enabled": true,
       "_id": "service_ai_ml_model_dev_id_4"
