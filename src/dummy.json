@@ -390,7 +390,7 @@
       "sequence": 12,
       "image": {
         "public_id": "1706285416017-wra7swm",
-        "url": "/attica-banner.jpg"
+        "url": "/attica-banner.png"
       },
       "description": " Data-driven analysis of the restaurant market in Attica, Greece. $This project analyzes the restaurant market in Attica, Greece, using data science to identify optimal business locations. Restaurant data, including locations, ratings, and categories, was collected via web scraping (Wikipedia) and API integration (Foursquare), while property pricing data was extracted from Spitogatos.gr. After preprocessing, K-means clustering (using Canberra distance) segmented the market, with the Elbow method determining the optimal cluster count. $Geospatial visualization using Folium mapped restaurant clusters and property prices, revealing high-density zones, underserved areas, and emerging culinary trends. The insights highlight market opportunities, helping entrepreneurs and investors make informed decisions. This project showcases expertise in web scraping, API integration, machine learning (K-means clustering), and geospatial analysis, demonstrating the power of data-driven business strategy.",
       "techStack": [" Python ", " Scikit-learn ", " Pandas ", " NumPy ", " Beautiful Soup "],
@@ -420,7 +420,7 @@
       "sequence": 10,
       "image": {
         "public_id": "1706285393568-zl9mcc",
-        "url": "/ai-music-banner.jpg"
+        "url": "/ai-music-banner.png"
       },
       "description": " AI-generated piano melodies using LSTM networks. $This project explores AI-driven music composition by developing an LSTM-based model to generate original monophonic piano melodies. Using the Essen Folksong Collection (ESAC) dataset, the model was trained to learn musical patterns and compose coherent melodies. $The workflow involved music preprocessing (filtering, transposing, and encoding melodies), LSTM network design (input processing, LSTM layers, dropout for regularization, and softmax-based prediction), and model training using categorical cross-entropy and the Adam optimizer. The trained model generated melodies by iteratively predicting notes from a seed sequence. $With 91.78% accuracy and a low loss of 23.91%, the system demonstrated its ability to replicate musical structures effectively. This project highlights expertise in deep learning with LSTMs, music data processing, and AI-driven creativity, showcasing the potential of machine learning in generative music composition.",
       "techStack": [" Python ", " TensorFlow ", " Keras ", " Music21 "],
