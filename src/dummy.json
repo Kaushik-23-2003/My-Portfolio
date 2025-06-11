@@ -490,7 +490,7 @@
       "desc": "Robust server-side apps using Node.js, Express.js, MongoDB, and MySQL for efficient APIs and logic.",
       "image": {
         "public_id": "portfolio3/1710357775748-9vwq4q.jpeg",
-        "url": "/backend-dev.png"
+        "url": "/backend-dev.jpg"
       },
       "enabled": true,
       "_id": "service_backend_web_dev_id_2"
@@ -512,7 +512,7 @@
       "desc": "Developing & evaluating ML models with NLP, Deep Learning for problem-solving & insights.",
       "image": {
         "public_id": "portfolio3/1710357680224-phijt.png",
-        "url": "/ai-dev.png"
+        "url": "/ai-dev.jpg"
       },
       "enabled": true,
       "_id": "service_ai_ml_model_dev_id_4"
