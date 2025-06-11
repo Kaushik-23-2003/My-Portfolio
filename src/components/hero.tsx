@@ -25,14 +25,14 @@ const Hero = ({ about }: HeroProps) => {
           <div className="flex items-center justify-center flex-col h-full pb-10">
             <Transition>
               <img
-                src={about.avatar.url}
+                src="/hero.jpg"
                 alt={about.name}
                 className="rounded-full size-28 object-cover"
               />
             </Transition>
             <div className="py-6 flex items-center flex-col">
               <h2 className="md:text-7xl text-2xl font-bold overflow-hidden text-center w-full">
-                <SlideIn>Hello! I&apos;m {about.name}</SlideIn> {/* ✅ Fixed Apostrophe */}
+                <SlideIn>Hello! I&apos;m {about.name}</SlideIn> 
               </h2>
               <h1 className="md:text-6xl text-xl overflow-hidden text-center w-full">
                 <SlideIn>{about.title}</SlideIn>
