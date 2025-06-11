@@ -345,7 +345,7 @@
       "sequence": 14,
       "image": {
         "public_id": "1706285511679-xe7r9t",
-        "url": "/apex-auth-baner.png"
+        "url": "/apex-auth-banner.png"
       },
       "description": " Modern, Secure Authentication for Web Applications.$Built for modern web applications, this system provides a complete and robust authentication solution, encompassing JWT, Google Authentication, HTTP-only cookies, bcrypt, and email notifications.$With a decoupled React frontend and Nodejs backend, Apex Auth delivers a secure RESTful API, ensuring performance, maintainability, and ease of integration so you can focus on building your application's core features. ",
       "techStack": ["Reactjs ", " Redux ", " Mern ", " CSS ", " Nodejs ", " MongoDB "],
@@ -390,7 +390,7 @@
       "sequence": 12,
       "image": {
         "public_id": "1706285416017-wra7swm",
-        "url": "/sdn-banner.jpg"
+        "url": "/attica-banner.jpg"
       },
       "description": " Data-driven analysis of the restaurant market in Attica, Greece. $This project analyzes the restaurant market in Attica, Greece, using data science to identify optimal business locations. Restaurant data, including locations, ratings, and categories, was collected via web scraping (Wikipedia) and API integration (Foursquare), while property pricing data was extracted from Spitogatos.gr. After preprocessing, K-means clustering (using Canberra distance) segmented the market, with the Elbow method determining the optimal cluster count. $Geospatial visualization using Folium mapped restaurant clusters and property prices, revealing high-density zones, underserved areas, and emerging culinary trends. The insights highlight market opportunities, helping entrepreneurs and investors make informed decisions. This project showcases expertise in web scraping, API integration, machine learning (K-means clustering), and geospatial analysis, demonstrating the power of data-driven business strategy.",
       "techStack": [" Python ", " Scikit-learn ", " Pandas ", " NumPy ", " Beautiful Soup "],
@@ -405,7 +405,7 @@
       "sequence": 11,
       "image": {
         "public_id": "1706285405228-98liol",
-        "url": "https://media-hosting.imagekit.io//1848ab49526d4579/25172b18-de8e-47d9-abb0-adf38db4883c.webp?Expires=1835473306&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=uWLqxvVCAPx--sfeMfEy0bDlUjqWhWIS33iabfnB5frS3m3KPyKpRuqmQ6JqIyy1qD~R1Zsg~qJlLyRQQFAA0s06Ic66bXME-6GVhYazWBiG3rSliW7HPOamMon-uxQwkjTO72idyxsEkfAUqoxeXncDuhiSbwFD1~mUv34M82gOWhNHAWMI~UlLhpPkDGevuIW-5nAk4pvHoNpSRUo9Guedm4SBlIYZ9F17dZe7V~E3Bi9WHmIt0Xi8-oAyudLUPdfkvUcRz0OE37Nug6j0luKTxGA1~coDRSaMX9J-E0K3Nq0vhjgy7tLh56oN1WTH0dnb165JWKRDv9NQI1UhpA__"
+        "url": "/sdn-banner.jpg"
       },
       "description": " Securing SDN networks against DDoS attacks with real-time monitoring. $This project focuses on securing Software Defined Networking (SDN) environments against Distributed Denial of Service (DDoS) attacks through real-time detection and automated mitigation. The system continuously monitors network traffic, extracts statistical features, and employs a Support Vector Machine (SVM) algorithm to detect anomalies indicative of DDoS attacks. Upon detection, mitigation measures, such as port blocking via the Ryu SDN controller, are automatically triggered to maintain network stability. $Developed and tested using Mininet for network simulation, Ryu as the SDN controller, and OpenFlow for communication, the system achieved 99.26% accuracy and a 100% malicious traffic detection rate with zero false positives. This project demonstrates expertise in SDN, network security, machine learning for anomaly detection, and network traffic analysis, providing a robust solution for safeguarding modern network infrastructures.",
       "techStack": [" SDN ", " Python ", " Scikit-learn ", " Wireshark "],
@@ -420,7 +420,7 @@
       "sequence": 10,
       "image": {
         "public_id": "1706285393568-zl9mcc",
-        "url": "https://media-hosting.imagekit.io//4cc7d865727145a1/freepik__upload__6572.png?Expires=1835201005&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=zRmMaaIraZeZGFBjBtQvAVXl6K98i6uhiGDNbRE~kuMIGHp0eAHqwTWA7gjqb-XAl1Yc7u2L6SsHY~I5ILlTEeRBoSO7xa2xEVDCAFH3LvcV8TC5cX-YCgwN~lV26fqHQkqCsw5G27TpOMpwXlcXDENubW~rUZPzGOmLw1dyLdxtnIkrN3va0czoc4EmQwzvnV4o5ZFZGxAE5JgJ3SAKT0lshlWkL-t4K6AzwAZ6mIWTFWh--dkCYIs2mpVTklFyFr6T0hIgAJgmQl1C5PDFTJgYwGH4TK2CgjOTJx2662LjWMpkKaFCG8enPOAhCxvGD8PYswEnjgkWO1zSeolZMA__"
+        "url": "/ai-music-banner.jpg"
       },
       "description": " AI-generated piano melodies using LSTM networks. $This project explores AI-driven music composition by developing an LSTM-based model to generate original monophonic piano melodies. Using the Essen Folksong Collection (ESAC) dataset, the model was trained to learn musical patterns and compose coherent melodies. $The workflow involved music preprocessing (filtering, transposing, and encoding melodies), LSTM network design (input processing, LSTM layers, dropout for regularization, and softmax-based prediction), and model training using categorical cross-entropy and the Adam optimizer. The trained model generated melodies by iteratively predicting notes from a seed sequence. $With 91.78% accuracy and a low loss of 23.91%, the system demonstrated its ability to replicate musical structures effectively. This project highlights expertise in deep learning with LSTMs, music data processing, and AI-driven creativity, showcasing the potential of machine learning in generative music composition.",
       "techStack": [" Python ", " TensorFlow ", " Keras ", " Music21 "],
